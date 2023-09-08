@@ -25,8 +25,8 @@ public class OnlineShopUI {
 
         System.out.print("Купить?(yes / no)");
         String answer = scanner.next();
-        if (!answer.equals("yes")) {
-            while (!answer.equals("yes")) {
+        if (!answer.equals("yes") && !answer.equals("no")) {
+            while (!answer.equals("yes") && !answer.equals("no")) {
                 try {
                     System.out.print("Купить?(yes / no)");
                     answer = scanner.next();
